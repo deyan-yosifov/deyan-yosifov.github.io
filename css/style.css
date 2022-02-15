@@ -1,0 +1,177 @@
+body{    
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    background-color: #0b1b03;
+    color: white;
+}
+
+.wow {
+    visibility: hidden;
+}
+
+.wow.wow-visible {
+    visibility: visible;
+}
+
+/*The navbar is more transparent when on top and the mobile menu is closed. When there is some scroll or the menu is opened it is darker so that it does not overlap some text. */
+.navbar.navbar-light{ background-color: #0b1b0318; }
+.navbar.navbar-light.navbar.navbar-light.nav-toggle-active,
+.navbar.navbar-light.navbar.navbar-light.top-nav-collapse{ background-color: #0b1b03EA; }
+
+.navbar.navbar-light .navbar-nav .nav-item .nav-link{
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+    font-size: 0.75rem;
+}
+
+.navbar.navbar-light .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.9)' stroke-width='2.45' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.navbar.navbar-light .navbar-nav .nav-item.active>.nav-link{
+    background-color: transparent;
+}
+
+.navbar.navbar-light .navbar-nav .nav-item.active>.nav-link::after{
+    border-bottom: 0.23rem solid white;
+    content: " ";
+    width: 100%;
+    display: block;
+}
+
+.navbar.navbar-light .navbar-nav .nav-item .nav-link:hover, footer a:hover, .navbar.navbar-light .navbar-nav .nav-item.active a.nav-link:hover{
+    background-color: rgba(0,0,0,0.2);
+    color: white;
+}
+
+.btn-contact, .navbar.navbar-light .navbar-nav .nav-item .nav-link.btn-contact{
+    color:#0b1b03;
+    padding: 0.6rem;
+    background-color: white;
+    font-size: 0.75rem;    
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.btn-contact:hover, .navbar.navbar-light .navbar-nav .nav-item .nav-link.btn-contact:hover{    
+    background-color: #0b1b03a4;
+    color:white;
+}
+
+.navbar .nav-flex-icons .nav-item{
+    padding: 0.5rem;
+    line-height: normal;
+    display: inline-block;
+}
+
+.navbar .nav-flex-icons .nav-item .nav-link {
+    display: inline-block;
+    text-align: center;
+    padding: 0.25rem;
+}
+
+.navbar .nav-flex-icons .nav-item div {
+    line-height: 0;
+}
+
+.navbar .nav-flex-icons .nav-item div span{
+    padding-bottom: 0.4rem;
+    padding-top: 0.05rem;
+    line-height: normal;
+}
+
+.navbar .nav-flex-icons .nav-item span{
+    color: white;
+    font-size: 0.66rem;
+    text-align: center;
+    padding: 0.3rem 0.15rem 0.15rem 0.15rem;         
+    display:block;
+    text-transform: none;
+    font-weight: normal;
+}
+
+.navbar .nav-flex-icons .nav-item .nav-link img {
+    height: 1.3rem;
+}
+
+footer img{
+    height: 0.8rem;
+}
+
+footer div.row{
+    padding: 0.5rem;
+    background-color: #0d302f66;
+}
+
+.mask{
+    background-color: #26640c51;
+}
+
+.card .card-body{
+    padding: 1.25rem 0.5rem;
+}
+
+.card .card-body .card-title{
+    font-weight: bolder;
+    font-size: 1.4rem;
+}
+
+.card .card-body .card-text{
+    font-size: 0.8rem;
+    color: white;
+}
+
+.navbar-brand { height: 2.8rem; padding: 0.25rem 0rem; }
+.mt-navbar { margin-top: 2.8rem; } 
+.pt-navbar { padding-top: 2.8rem; }
+.navbar-anchor { position:relative!important; top:-2.8rem; }
+.fz-1 { font-size: 0.25rem;} .fz-2 { font-size: 0.5rem;} .fz-3 { font-size: 0.75rem;} .fz-4 { font-size: 1rem;} .fz-5 { font-size: 1.25rem;}
+.fz-6 { font-size: 1.5rem;} .fz-7 { font-size: 1.75rem;} .fz-8 { font-size: 2rem;} .fz-9 { font-size: 2.25rem;} .fz-10 { font-size: 2.5rem;}
+
+/*This is xs breakpoint  */
+@media (min-width: 400px) {    
+  .fz-xs-1 { font-size: 0.25rem;} .fz-xs-2 { font-size: 0.5rem;} .fz-xs-3 { font-size: 0.75rem;} .fz-xs-4 { font-size: 1rem;} .fz-xs-5 { font-size: 1.25rem;}
+  .fz-xs-6 { font-size: 1.5rem;} .fz-xs-7 { font-size: 1.75rem;} .fz-xs-8 { font-size: 2rem;} .fz-xs-9 { font-size: 2.25rem;} .fz-xs-10 { font-size: 2.5rem;}
+}
+
+/*This is sm breakpoint  */
+@media (min-width: 576px) {    
+  .fz-sm-1 { font-size: 0.25rem;} .fz-sm-2 { font-size: 0.5rem;} .fz-sm-3 { font-size: 0.75rem;} .fz-sm-4 { font-size: 1rem;} .fz-sm-5 { font-size: 1.25rem;}
+  .fz-sm-6 { font-size: 1.5rem;} .fz-sm-7 { font-size: 1.75rem;} .fz-sm-8 { font-size: 2rem;} .fz-sm-9 { font-size: 2.25rem;} .fz-sm-10 { font-size: 2.5rem;}
+}
+
+/*This is md breakpoint */
+@media (min-width: 768px) {    
+  .navbar-brand{ height: 3.5rem; }
+  .mt-navbar{ margin-top: 3.5rem; }
+  .pt-navbar { padding-top: 3.5rem; }
+  .navbar-anchor { top: -3.5rem; }
+  .fz-md-1 { font-size: 0.25rem;} .fz-md-2 { font-size: 0.5rem;} .fz-md-3 { font-size: 0.75rem;} .fz-md-4 { font-size: 1rem;} .fz-md-5 { font-size: 1.25rem;}
+  .fz-md-6 { font-size: 1.5rem;} .fz-md-7 { font-size: 1.75rem;} .fz-md-8 { font-size: 2rem;} .fz-md-9 { font-size: 2.25rem;} .fz-md-10 { font-size: 2.5rem;}
+}
+
+/*This is lg breakpoint  */
+@media (min-width: 992px) {    
+  .fz-lg-1 { font-size: 0.25rem;} .fz-lg-2 { font-size: 0.5rem;} .fz-lg-3 { font-size: 0.75rem;} .fz-lg-4 { font-size: 1rem;} .fz-lg-5 { font-size: 1.25rem;}
+  .fz-lg-6 { font-size: 1.5rem;} .fz-lg-7 { font-size: 1.75rem;} .fz-lg-8 { font-size: 2rem;} .fz-lg-9 { font-size: 2.25rem;} .fz-lg-10 { font-size: 2.5rem;}
+
+  .navbar-brand{ height: 5.3rem; }
+  .mt-navbar{ margin-top: 5.3rem }
+  .pt-navbar { padding-top: 5.3rem; }
+  .navbar-anchor { top: -5.3rem; }
+}
+
+/*This is xl breakpoint  */
+@media (min-width: 1200px) {    
+  .fz-xl-1 { font-size: 0.25rem;} .fz-xl-2 { font-size: 0.5rem;} .fz-xl-3 { font-size: 0.75rem;} .fz-xl-4 { font-size: 1rem;} .fz-xl-5 { font-size: 1.25rem;}
+  .fz-xl-6 { font-size: 1.5rem;} .fz-xl-7 { font-size: 1.75rem;} .fz-xl-8 { font-size: 2rem;} .fz-xl-9 { font-size: 2.25rem;} .fz-xl-10 { font-size: 2.5rem;}
+}
+
+/* This is extra-extra large breakpoint so that we have normal site margins on 1920 px displays */
+@media (min-width: 1568px){
+  .navbar-brand{ height: 6.3rem; }
+  .mt-navbar{ margin-top: 6.3rem }    
+  .pt-navbar { padding-top: 6.3rem; }
+  .navbar-anchor { top: -6.3rem; }
+  .container-lg{ max-width: 1520px; }
+}

@@ -1,10 +1,161 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <!-- Metadata goes here -->
-  </head>
-  <body>
-	<h1>This is Deyan Yosifov's website on Github Pages.</h1>
-    <!-- Content goes here -->
-  </body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="keywords" content="Personal, Web, Deyan, Yosifov, Unity, WebGL" />
+  <meta name="description" content="Personal github pages of Deyan Yosifov." /> 
+  <meta name="author" content="Deyan Yosifov, https://github.com/deyan-yosifov" />
+  <meta name="owner" content="Deyan Yosifov" />
+
+  <!--Open Graph-->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://deyan-yosifov.github.io/" />
+  <meta property="og:title" content="Deyan Yosifov" />
+  <meta property="og:description" content="Personal github pages of Deyan Yosifov." />
+  <meta property="og:image" content="https://deyan-yosifov.github.io/img/DeyanDesign/deyan-opengraph.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="627" />
+  <!--Open Graph-->
+
+  <title>Deyan Yosifov</title>
+  <!-- Deyan icon -->
+  <link rel="icon" href="img/DeyanDesign/deyan-icon.ico" type="image/x-icon">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+  <!-- Google Fonts Roboto -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+  <!-- Font Open Sans -->
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans" />
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- Material Design Bootstrap -->
+  <link rel="stylesheet" href="css/mdb.min.css">
+  <!-- Your custom styles (optional) -->
+  <link rel="stylesheet" href="css/style.css">
+  <style type="text/css">
+    html, body, .video-wrapper {
+      height: 100%;
+    }
+  </style>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-TMLW0CRYVP"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+  
+    gtag('config', 'G-TMLW0CRYVP');
+  </script>
+</head>
+<body>
+
+  <!-- Start your project here-->  
+  <script type="text/javascript">
+    (function(){
+      var isIE = /*@cc_on!@*/false || !!document.documentMode;
+      if (isIE){
+        var alertMessageIE = "This website does not support Internet Explorer. Please try opening it in some of the following web browsers: Chrome, Firefox, Opera, Safari or Edge.";
+        document.write('<div class="alert alert-danger fixed-top mt-navbar text-center container-lg" role="alert">' + alertMessageIE + '</div>');
+        alert(alertMessageIE);
+      }
+    }());
+  </script>
+  <!-- Navbar -->
+  <nav class="navbar container-fluid fixed-top navbar-expand-lg navbar-light scrolling-navbar mx-auto py-0">    
+    <div class="container-lg">  
+      <!-- Brand -->
+      <a class="navbar-brand" style="display: inline-block;" href="#">
+        <span style="display: inline-block; vertical-align: middle; height: 100%;"></span>
+        <img class="h-100" style="max-height: 40px; vertical-align: middle;" src="img/DeyanDesign/deyan-logo.png" alt="Deyan logo" />       
+      </a>
+
+      <!-- Collapse -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Links -->
+      <div class="collapse navbar-collapse align-items-lg-center" id="navbarSupportedContent">
+
+        <!-- Left -->
+        <ul class="navbar-nav single-page-nav-menu mr-auto mt-lg-4">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Unity/CAGD_Javascript_Bridge/">WebGL</a>
+          </li>
+        </ul>
+
+        
+        <!-- Right -->
+        <ul class="navbar-nav nav-flex-icons align-items-center flex-wrap justify-content-center">
+          <li class="nav-item d-flex align-items-center">
+            <a class="nav-link btn-contact shadow-none" href="https://github.com/deyan-yosifov">About me</a>
+          </li>
+        </ul>
+
+      </div>
+
+    </div>
+  </nav>
+  <!-- Navbar -->
+
+  <!--Top video with mask overlay-->
+  <div class="video-wrapper container-lg px-0 mx-auto" style="overflow: hidden;" id="home">
+    <div class="m-0 view h-100 fadeIn">
+      <video poster="img/DeyanDesign/mesh.jpg" playsinline autoplay muted loop>
+        <source src="img/DeyanDesign/mesh.mp4" type="video/mp4" />
+      </video>
+      
+      <!-- Mask & flexbox options-->
+      <div class="mask d-flex justify-content-center align-items-center">
+        <!-- Content -->
+        <div class="white-text mx-2 mx-lg-5 fadeInUp text-center">
+          <h1 class="mb-2 mb-lg-4 fz-6 fz-sm-9" style="font-weight: 1000;">
+            Deyan Yosifov
+          </h1>
+          <p class="mb-1 mb-lg-4 fz-4 fz-sm-6" style="font-weight:200; line-height: 1.2;">
+            <span class="p-0 m-0 d-none d-md-inline">This is my personal website on github pages for web experiments and experiences.</span>
+            <span class="p-0 m-0 d-inline d-md-none">My personal github pages for web experiments.</span>
+          </p>
+        </div>
+        <!-- Content -->
+      </div>
+      <!-- Mask & flexbox options-->
+    </div>
+  </div>
+  <!--Top video with mask overlay-->
+
+  <!--PAGE CONTENT-->
+  <div class="container-lg px-0 mx-auto">
+    
+    <footer>
+      <div class="row mx-0">
+        <div class="d-flex col-12 flex-wrap align-items-center justify-content-center mt-2 mt-lg-0">
+          <span class="m-0 p-0 d-flex" style="color: #acabaf; font-size: 0.6rem;">
+            Free Stock videos by &nbsp;<a style="color: #acabaf; font-size: 0.6rem;" href="http://www.videezy.com/" target="_blank">Videezy</a>
+          </span>
+        </div>
+      </div>
+    </footer>
+  </div>  
+  <!--PAGE CONTENT-->
+
+  <!-- End your project here-->
+
+  <!-- jQuery -->
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+
+</body>
 </html>
